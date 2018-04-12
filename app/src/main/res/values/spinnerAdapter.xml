@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="choices_array">
+        <item>McDonald's</item>
+        <item>Burger King</item>
+        <item>White Castle</item>
+        <item>Taco Bell</item>
+    </string-array>
+</resources>

@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <!--q1-->
+        <RelativeLayout>
+            <TextView
+                android:id="@+id/q1_textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Q1. I see a little silhouetto of a man.."
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/q1_textView">
+                <RadioButton
+                    android:id="@+id/q1_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Scootypoot, scootypoot will you do the dishes"/>
+                <RadioButton
+                    android:id="@+id/q1_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Scaramoose, scaramoose will you do the tango"/>
+                <RadioButton
+                    android:id="@+id/q1_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Scaramouch, scaramouch will you do the fandango" />
+                <RadioButton
+                    android:id="@+id/q1_4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Thunderbolt and lightning very very frightening me"/>
+            </RadioGroup>
+        </RelativeLayout>
+
+        <!--q2-->
+        <RelativeLayout>
+            <TextView
+                android:id="@+id/q2_textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Q2. How long can a Narwhal's tusk grow to?"/>
+            <SeekBar
+                android:id="@+id/q2_seekbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/q2_textView"
+                android:max="20"
+                android:progress="5"/>
+        </RelativeLayout>
+
+        <!--q3-->
+        <RelativeLayout>
+            <TextView
+                android:id="@+id/q3_textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Q3. Who ISN'T a disney prince?"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/q3_textView">
+                <RadioButton
+                    android:id="@+id/q3_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="The Beast"/>
+                <RadioButton
+                    android:id="@+id/q3_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Prince Charming"/>
+                <RadioButton
+                    android:id="@+id/q3_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Li Shang"/>
+                <RadioButton
+                    android:id="@+id/q3_4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Lumiere"/>
+            </RadioGroup>
+        </RelativeLayout>
+
+        <!--q4-->
+        <RelativeLayout>
+            <TextView
+                android:id="@+id/q4_textView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Q4. What's usually in a BLT sandwich?"/>
+            <LinearLayout
+                android:layout_below="@id/q4_textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            <CheckBox
+                android:id="@+id/q4_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Blue chesse" />
+            <CheckBox
+                android:id="@+id/q4_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Lettuce" />
+
+                <CheckBox
+                    android:id="@+id/q4_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Bacon" />
+
+                <CheckBox
+                    android:id="@+id/q4_4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tomato" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <!--q5-->
+        <RelativeLayout>
+            <TextView
+                android:id="@+id/q5_textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Q5. How many senators are in each US state?"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/q5_textView">
+                <RadioButton
+                    android:id="@+id/q5_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1"/>
+                <RadioButton
+                    android:id="@+id/q5_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2"/>
+                <RadioButton
+                    android:id="@+id/q5_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="3"/>
+                <RadioButton
+                    android:id="@+id/q5_4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="100"/>
+            </RadioGroup>
+        </RelativeLayout>
+
+        <!--q6-->
+        <RelativeLayout>
+            <TextView
+                android:id="@+id/q6_textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Q6. Which company is credited to be the first 'fast food' chain in 1921?"/>
+            <Spinner
+                android:id="@+id/q6_spinner"
+                android:layout_below="@id/q6_textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+            </Spinner>
+        </RelativeLayout>
+
+        <!--q7-->
+        <RelativeLayout>
+            <TextView
+                android:id="@+id/q7_textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Q7. A Shakespearean sonnets consits of how many lines?"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/q7_textView">
+                <RadioButton
+                    android:id="@+id/q7_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="13"/>
+                <RadioButton
+                    android:id="@+id/q7_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="6"/>
+                <RadioButton
+                    android:id="@+id/q7_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="14"/>
+                <RadioButton
+                    android:id="@+id/q7_4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="12"/>
+            </RadioGroup>
+        </RelativeLayout>
+
+        <!--q8-->
+        <RelativeLayout>
+            <TextView
+                android:id="@+id/q8_textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Q8."/>
+
+            <android.support.v7.widget.CardView
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/card_view_1"
+                android:layout_gravity="center"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_below="@id/q8_textView"
+                card_view:cardCornerRadius="4dp"
+                card_view:cardBackgroundColor="@color/colorAccent">
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/card_view_2"
+                android:layout_gravity="center"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_below="@id/q8_textView"
+                android:layout_toRightOf="@id/card_view_1"
+                card_view:cardCornerRadius="4dp"
+                card_view:cardBackgroundColor="@color/colorAccent">
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/card_view_3"
+                android:layout_gravity="center"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_below="@id/card_view_1"
+                card_view:cardCornerRadius="4dp"
+                card_view:cardBackgroundColor="@color/colorAccent">
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/card_view_4"
+                android:layout_gravity="center"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_below="@id/card_view_2"
+                android:layout_toRightOf="@id/card_view_3"
+                card_view:cardCornerRadius="4dp"
+                card_view:cardBackgroundColor="@color/colorPrimary">
+            </android.support.v7.widget.CardView>
+        </RelativeLayout>
+
+        <!--q9-->
+        <RelativeLayout>
+            <TextView
+                android:id="@+id/q9_textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Q9. Jon Snow's aunt is?"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/q9_textView">
+                <RadioButton
+                    android:id="@+id/q9_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Daenerys Stormborn of the House Targaryen, First of Her Name, the Unburnt, Queen of the Andals and the First Men, Khaleesi of the Great Grass Sea, Breaker of Chains, and Mother of Dragons"/>
+                <RadioButton
+                    android:id="@+id/q9_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Danerys, Lysa Arryn"/>
+                <RadioButton
+                    android:id="@+id/q9_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Lysa Arryn, Lyanna Stark"/>
+            </RadioGroup>
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/submit_button"
+            android:layout_width="wrap_content"
+            android:text="submit"
+            android:onClick="submitButton"/>
+
+    </TableLayout>
+</ScrollView>
