@@ -1,17 +1,25 @@
 package com.example.android.hqtrvianot;
 
+import android.graphics.Color;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.widget.CardView;
 import android.util.Log;
 import android.view.View;
 import android.widget.ArrayAdapter;
+import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.RadioButton;
 import android.widget.SeekBar;
 import android.widget.Spinner;
 import android.widget.SpinnerAdapter;
+import android.widget.TextView;
+
+import org.w3c.dom.Text;
 
 public class MainActivity extends AppCompatActivity {
+
+    int score = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,11 +34,26 @@ public class MainActivity extends AppCompatActivity {
 
         SeekBar seekq2 = (SeekBar) findViewById(R.id.q2_seekbar);
         seekq2.incrementProgressBy(5);
+
+        seekq2.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
+            @Override
+            public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
+                TextView text = (TextView) findViewById(R.id.q2_textView_2);
+                text.setText(progress + " ft");
+            }
+
+            @Override
+            public void onStartTrackingTouch(SeekBar seekBar) {
+
+            }
+
+            @Override
+            public void onStopTrackingTouch(SeekBar seekBar) {
+
+            }
+        });
     }
 
-   public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
-       Log.v("seekbar", "progress" + progress);
-   }
 
     private void checkAnswers() {
         RadioButton q1 = (RadioButton) findViewById(R.id.q1_3);
@@ -40,7 +63,9 @@ public class MainActivity extends AppCompatActivity {
         Spinner q6 =(Spinner) findViewById(R.id.q6_spinner);
         String text = q6.getSelectedItem().toString();
         RadioButton q7 = (RadioButton) findViewById(R.id.q7_3);
-        Log.v("answers", "1: " + q1 + " 2: " + q2 + " 3: " + q3 + " 5: " + q5);
+        CardView q8 = (CardView) findViewById(R.id.card_view_4);
+
+
     }
 
     private void checkBLTq() {
@@ -51,5 +76,9 @@ public class MainActivity extends AppCompatActivity {
 
     public void submitButton(View view) {
         checkAnswers();
+
+        Button submitButton = (Button) findViewById(R.id.submit_button);
+        submitButton.setBackgroundColor(Color.GREEN);
+        submitButton.setText("100% YAYYYY");
     }
 }

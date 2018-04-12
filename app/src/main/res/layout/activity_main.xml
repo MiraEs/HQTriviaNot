@@ -9,7 +9,8 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
         <!--q1-->
-        <RelativeLayout>
+        <RelativeLayout
+            android:layout_margin="10dp">
             <TextView
                 android:id="@+id/q1_textView"
                 android:layout_width="wrap_content"
@@ -47,12 +48,20 @@
         </RelativeLayout>
 
         <!--q2-->
-        <RelativeLayout>
+        <RelativeLayout
+            android:layout_margin="10dp">
             <TextView
                 android:id="@+id/q2_textView"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Q2. How long can a Narwhal's tusk grow to?"/>
+            <TextView
+                android:id="@+id/q2_textView_2"
+                android:layout_toRightOf="@id/q2_textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp"
+                android:text=""/>
             <SeekBar
                 android:id="@+id/q2_seekbar"
                 android:layout_width="match_parent"
@@ -63,7 +72,8 @@
         </RelativeLayout>
 
         <!--q3-->
-        <RelativeLayout>
+        <RelativeLayout
+            android:layout_margin="10dp">
             <TextView
                 android:id="@+id/q3_textView"
                 android:layout_width="wrap_content"
@@ -101,7 +111,8 @@
         </RelativeLayout>
 
         <!--q4-->
-        <RelativeLayout>
+        <RelativeLayout
+            android:layout_margin="10dp">
             <TextView
                 android:id="@+id/q4_textView"
                 android:layout_width="match_parent"
@@ -137,7 +148,8 @@
         </RelativeLayout>
 
         <!--q5-->
-        <RelativeLayout>
+        <RelativeLayout
+            android:layout_margin="10dp">
             <TextView
                 android:id="@+id/q5_textView"
                 android:layout_width="wrap_content"
@@ -175,7 +187,8 @@
         </RelativeLayout>
 
         <!--q6-->
-        <RelativeLayout>
+        <RelativeLayout
+            android:layout_margin="10dp">
             <TextView
                 android:id="@+id/q6_textView"
                 android:layout_width="match_parent"
@@ -190,7 +203,8 @@
         </RelativeLayout>
 
         <!--q7-->
-        <RelativeLayout>
+        <RelativeLayout
+            android:layout_margin="10dp">
             <TextView
                 android:id="@+id/q7_textView"
                 android:layout_width="wrap_content"
@@ -228,12 +242,13 @@
         </RelativeLayout>
 
         <!--q8-->
-        <RelativeLayout>
+        <RelativeLayout
+            android:layout_margin="10dp">
             <TextView
                 android:id="@+id/q8_textView"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Q8."/>
+                android:text="Q8. Which one is a kouign-amann?"/>
 
             <android.support.v7.widget.CardView
                 xmlns:card_view="http://schemas.android.com/apk/res-auto"
@@ -243,7 +258,14 @@
                 android:layout_height="200dp"
                 android:layout_below="@id/q8_textView"
                 card_view:cardCornerRadius="4dp"
-                card_view:cardBackgroundColor="@color/colorAccent">
+                card_view:cardBackgroundColor="@color/bar"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:layout_margin="5dp"
+                android:clickable="true">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/croissant"/>
             </android.support.v7.widget.CardView>
 
             <android.support.v7.widget.CardView
@@ -255,7 +277,14 @@
                 android:layout_below="@id/q8_textView"
                 android:layout_toRightOf="@id/card_view_1"
                 card_view:cardCornerRadius="4dp"
-                card_view:cardBackgroundColor="@color/colorAccent">
+                card_view:cardBackgroundColor="@color/pink"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:layout_margin="5dp"
+                android:clickable="true">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/madeleines"/>
             </android.support.v7.widget.CardView>
 
             <android.support.v7.widget.CardView
@@ -266,7 +295,14 @@
                 android:layout_height="200dp"
                 android:layout_below="@id/card_view_1"
                 card_view:cardCornerRadius="4dp"
-                card_view:cardBackgroundColor="@color/colorAccent">
+                card_view:cardBackgroundColor="@color/colorAccent"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:layout_margin="5dp"
+                android:clickable="true">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/palmier"/>
             </android.support.v7.widget.CardView>
 
             <android.support.v7.widget.CardView
@@ -278,12 +314,19 @@
                 android:layout_below="@id/card_view_2"
                 android:layout_toRightOf="@id/card_view_3"
                 card_view:cardCornerRadius="4dp"
-                card_view:cardBackgroundColor="@color/colorPrimary">
+                card_view:cardBackgroundColor="@color/colorPrimary"
+                android:clickable="true"
+                android:layout_margin="5dp">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/kouigh"/>
             </android.support.v7.widget.CardView>
         </RelativeLayout>
 
         <!--q9-->
-        <RelativeLayout>
+        <RelativeLayout
+            android:layout_margin="10dp">
             <TextView
                 android:id="@+id/q9_textView"
                 android:layout_width="wrap_content"
